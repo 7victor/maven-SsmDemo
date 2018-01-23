@@ -13,8 +13,8 @@
  2.项目切换到Navigator视图，修改.settings\org.eclipse.wst.common.project.facet.core.xml（也可以直接在绝对路径修改）  
    <installed facet="java" version="1.8"/>
    <installed facet="jst.web" version="3.1"/>
- 3.pom.xml添加如下  
- <build>
+ 3.pom.xml添加如下    
+   <build>
         <finalName>ssm</finalName>
         <plugins>
             <plugin>
@@ -29,7 +29,8 @@
     </build>
  4.右键项目Maven->Update Project  
  此时再查看下Properties->Project Facets 查看Dynamic Web Module版本以及Java版本。是否正确  
-三、接着将我们需要导入的包导入，修改pom.xml  
+三、接着将我们需要导入的包导入，修改pom.xml     
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
