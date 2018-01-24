@@ -212,16 +212,16 @@ mavenDemo
 		<welcome-file>index.action</welcome-file>
 	</welcome-file-list>
 </web-app>
-五、配置spring*.xml、mybatis.xml  
-  src/main/resources下创建这些xml文件，具体看项目里的内容  
-六、配置静态文件log4j.properties和jdbc.properties    
-  这个具体配置参数可以参考别人的我这里只是简单的配置了常用的  
-七、开发代码   
-  src/main/java底下创建controller、mapper、po、servie、service.impl等包。  
-  mapper、po可用mybatis-generator自动生成。参考 https://github.com/7victor/mybatis-generator  
-  controller需要加上@Controller注解、ServiceImpl需要加上@Service注解  
-  通过@Autowired注解获取Service以及Mapper对象  
-  通过@RequestMapping("/index")注解来设置控制器的路径  
-八、运行项目  
-  右键->Run(或者debug)->Maven Build->Goals中填入-Dmaven.tomcat.port=端口号 tomcat:run  
-  浏览器http://localhost:8180/SsmDemo/index.action   即可访问  
+五、配置spring*.xml、mybatis.xml    
+  src/main/resources下创建这些xml文件，具体看项目里的内容    
+六、配置静态文件log4j.properties和jdbc.properties       
+  这个具体配置参数可以参考别人的我这里只是简单的配置了常用的     
+七、开发代码      
+  src/main/java底下创建controller、mapper、po、servie、service.impl等包。     
+  mapper、po可用mybatis-generator自动生成。参考 https://github.com/7victor/mybatis-generator     
+  controller需要加上@Controller注解、ServiceImpl需要加上@Service注解    
+  通过@Autowired注解获取Service以及Mapper对象    
+  通过@RequestMapping("/index")注解来设置控制器的路径    
+八、运行项目    
+  右键->Run(或者debug)->Maven Build->Goals中填入-Dmaven.tomcat.port=端口号 tomcat:run    
+  浏览器http://localhost:8180/SsmDemo/index.action   即可访问    
